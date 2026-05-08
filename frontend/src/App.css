@@ -1,0 +1,7 @@
+/* Additional App Styles */
+
+.App {
+  min-height: 100vh;
+}
+
+/* Remove old styles, everything is in index.css now */

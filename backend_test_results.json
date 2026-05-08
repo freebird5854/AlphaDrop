@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "total_tests": 24,
+    "passed_tests": 23,
+    "success_rate": "95.8%",
+    "timestamp": "2026-04-17T18:15:49.211480"
+  },
+  "test_results": [
+    {
+      "test": "API Root Endpoint",
+      "success": true,
+      "details": "Status: 200, Message: ALPHA DROP API - Product Intelligence Engine",
+      "timestamp": "2026-04-17T18:15:15.261856"
+    },
+    {
+      "test": "Get Products",
+      "success": true,
+      "details": "Status: 200, Products returned: 50",
+      "timestamp": "2026-04-17T18:15:15.386981"
+    },
+    {
+      "test": "Dashboard Products",
+      "success": true,
+      "details": "Explosive: 5, Rising: 5, Early: 5",
+      "timestamp": "2026-04-17T18:15:15.513601"
+    },
+    {
+      "test": "Dashboard Stats",
+      "success": true,
+      "details": "Total: 254, Explosive: 83",
+      "timestamp": "2026-04-17T18:15:15.633955"
+    },
+    {
+      "test": "Get Alerts",
+      "success": true,
+      "details": "Status: 200, Alerts: 10",
+      "timestamp": "2026-04-17T18:15:15.753598"
+    },
+    {
+      "test": "Get Categories",
+      "success": true,
+      "details": "Status: 200, Categories: 12",
+      "timestamp": "2026-04-17T18:15:15.910312"
+    },
+    {
+      "test": "Product Detail",
+      "success": true,
+      "details": "Product: [NEW] [medicube] PDRN Pink Collagen Volume Multi Balm | All In One Volufiline, PDRN, NAD Stick for Y, Alpha Score: 83",
+      "timestamp": "2026-04-17T18:15:16.013731"
+    },
+    {
+      "test": "Product Status Filter",
+      "success": true,
+      "details": "Status filter working: 50 explosive products",
+      "timestamp": "2026-04-17T18:15:16.160783"
+    },
+    {
+      "test": "Product Score Filter (72+ threshold)",
+      "success": true,
+      "details": "Score filter working: 50 products >= 72",
+      "timestamp": "2026-04-17T18:15:16.306563"
+    },
+    {
+      "test": "Refresh Products",
+      "success": true,
+      "details": "Status: 200, Message: Products refreshed",
+      "timestamp": "2026-04-17T18:15:16.447632"
+    },
+    {
+      "test": "Alpha Score Thresholds (72+ EXPLOSIVE)",
+      "success": true,
+      "details": "Threshold correct: 8 explosive products all >= 72 score (8 total, below 83+ target)",
+      "timestamp": "2026-04-17T18:15:16.681946"
+    },
+    {
+      "test": "Subscription Plans",
+      "success": true,
+      "details": "All 3 plans found with correct prices: Scout $29, Hunter $79, Predator $199",
+      "timestamp": "2026-04-17T18:15:16.791144"
+    },
+    {
+      "test": "Get Watchlist",
+      "success": true,
+      "details": "Watchlist retrieved: 2 items",
+      "timestamp": "2026-04-17T18:15:16.901360"
+    },
+    {
+      "test": "Add to Watchlist",
+      "success": true,
+      "details": "Product 5e402b42-1b9c-4afc-9d75-1ae737e46556 added to watchlist",
+      "timestamp": "2026-04-17T18:15:17.171737"
+    },
+    {
+      "test": "Remove from Watchlist",
+      "success": true,
+      "details": "Product 5e402b42-1b9c-4afc-9d75-1ae737e46556 removed from watchlist",
+      "timestamp": "2026-04-17T18:15:17.311088"
+    },
+    {
+      "test": "Stripe Checkout Create",
+      "success": true,
+      "details": "Checkout session created: cs_test_a1sLd6fiOzbD...",
+      "timestamp": "2026-04-17T18:15:17.883346"
+    },
+    {
+      "test": "Cron Endpoint Security",
+      "success": true,
+      "details": "Correctly rejected request without API key",
+      "timestamp": "2026-04-17T18:15:17.997739"
+    },
+    {
+      "test": "Cron Refresh Data",
+      "success": false,
+      "details": "Error: HTTPSConnectionPool(host='viral-product-scout-1.preview.emergentagent.com', port=443): Read timed out. (read timeout=30)",
+      "timestamp": "2026-04-17T18:15:48.077437"
+    },
+    {
+      "test": "Beta Signup",
+      "success": true,
+      "details": "Beta signup successful: position 3, status: success",
+      "timestamp": "2026-04-17T18:15:48.509124"
+    },
+    {
+      "test": "Beta Stats",
+      "success": true,
+      "details": "Beta stats: 3 total signups, 3 pending",
+      "timestamp": "2026-04-17T18:15:48.624402"
+    },
+    {
+      "test": "Auth Me (Unauthenticated)",
+      "success": true,
+      "details": "Correctly rejected unauthenticated request",
+      "timestamp": "2026-04-17T18:15:48.743906"
+    },
+    {
+      "test": "Auth Session (Invalid)",
+      "success": true,
+      "details": "Correctly rejected invalid session",
+      "timestamp": "2026-04-17T18:15:48.981281"
+    },
+    {
+      "test": "Auth Logout",
+      "success": true,
+      "details": "Logout response: Logged out successfully",
+      "timestamp": "2026-04-17T18:15:49.092884"
+    },
+    {
+      "test": "Notifications Test (Auth Required)",
+      "success": true,
+      "details": "Correctly rejected unauthenticated notification request",
+      "timestamp": "2026-04-17T18:15:49.210507"
+    }
+  ]
+}

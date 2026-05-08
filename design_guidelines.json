@@ -1,0 +1,135 @@
+{
+  "typography": {
+    "font_family": {
+      "headings": "Barlow Condensed, sans-serif",
+      "body": "Inter, sans-serif",
+      "data": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl font-black tracking-tighter uppercase",
+      "h2": "text-3xl md:text-4xl font-bold tracking-tight uppercase",
+      "h3": "text-xl md:text-2xl font-bold tracking-tight uppercase",
+      "p": "text-base leading-relaxed text-muted-foreground",
+      "label": "text-xs font-mono uppercase tracking-widest text-muted-foreground",
+      "data_value": "text-lg font-mono font-medium tracking-tight"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap"
+    ]
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "card": "#0A0A0A",
+      "card_foreground": "#FFFFFF",
+      "popover": "#0F0F0F",
+      "popover_foreground": "#FFFFFF",
+      "primary": "#00FF94",
+      "primary_foreground": "#000000",
+      "secondary": "#1A1A1A",
+      "secondary_foreground": "#FFFFFF",
+      "muted": "#1A1A1A",
+      "muted_foreground": "#888888",
+      "accent": "#00F0FF",
+      "accent_foreground": "#000000",
+      "destructive": "#FF3B30",
+      "destructive_foreground": "#FFFFFF",
+      "border": "#222222",
+      "input": "#1A1A1A",
+      "ring": "#00FF94"
+    },
+    "status": {
+      "explosive": "#00FF94",
+      "rising": "#FFFF00",
+      "watchlist": "#FF5C00",
+      "avoid": "#FF3B30",
+      "neutral": "#404040"
+    }
+  },
+  "visual_enhancers": {
+    "borders": {
+      "default": "border border-border",
+      "active": "border border-primary/50 shadow-[0_0_15px_rgba(0,255,148,0.3)]",
+      "tracing_beam": "relative after:absolute after:inset-0 after:rounded-lg after:p-[1px] after:bg-gradient-to-r after:from-transparent after:via-primary after:to-transparent after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-500"
+    },
+    "glassmorphism": {
+      "default": "bg-black/60 backdrop-blur-xl border border-white/10",
+      "heavy": "bg-black/80 backdrop-blur-2xl border border-white/5"
+    },
+    "texture": {
+      "scanlines": "bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none fixed inset-0 z-50",
+      "grid": "bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:4rem_4rem]"
+    },
+    "shadows": {
+      "neon": "shadow-[0_0_20px_rgba(0,255,148,0.15)]",
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+    }
+  },
+  "layout_strategies": {
+    "dashboard_grid": {
+      "container": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-4 p-4 md:p-6",
+      "hero_widget": "col-span-1 md:col-span-4 lg:col-span-8 row-span-2",
+      "list_widget": "col-span-1 md:col-span-2 lg:col-span-4 row-span-2",
+      "stat_card": "col-span-1 md:col-span-2 lg:col-span-3"
+    },
+    "product_grid": {
+      "container": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6",
+      "card_style": "group relative overflow-hidden bg-card border border-border hover:border-primary/50 transition-all duration-300"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground font-bold tracking-tight uppercase hover:bg-primary/90 h-10 px-6 rounded-none skew-x-[-10deg] hover:skew-x-0 transition-transform",
+      "secondary": "bg-secondary text-secondary-foreground font-bold tracking-tight uppercase hover:bg-secondary/80 h-10 px-6 rounded-none",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-6 rounded-none uppercase font-mono text-xs"
+    },
+    "cards": {
+      "default": "rounded-none border-l-2 border-l-transparent hover:border-l-primary bg-card text-card-foreground shadow-sm transition-all"
+    },
+    "badges": {
+      "score": "font-mono font-bold text-xs px-2 py-0.5 rounded-sm uppercase tracking-widest",
+      "trend": "font-mono text-[10px] px-1.5 py-0.5 bg-accent/10 text-accent border border-accent/20"
+    }
+  },
+  "media": {
+    "image_urls": {
+      "products": [
+        "https://images.unsplash.com/photo-1687168582375-097293b91c04?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1744234592204-37fda1a1abac?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1773187973415-2c85a99aaa82?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1771955216611-0a826d819978?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1595756630832-848909a39597?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.pexels.com/photos/3184451/pexels-photo-3184451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/6800936/pexels-photo-6800936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      ],
+      "avatars": [
+        "https://api.dicebear.com/9.x/avataaars/svg?seed=Felix",
+        "https://api.dicebear.com/9.x/avataaars/svg?seed=Aneka",
+        "https://api.dicebear.com/9.x/avataaars/svg?seed=Mark"
+      ]
+    },
+    "icons": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "1. **Enforce Dark Mode**: Set the `dark` class on the html/body tag permanently. The app is a dark-mode-only experience.",
+    "2. **Font Implementation**: Add the Google Fonts import to `index.css`. Apply `font-sans` (Barlow) to headings and `font-mono` (JetBrains) to all data metrics.",
+    "3. **Grid Layout**: Use the 'Bento' grid philosophy. Avoid equal-width columns. Use `col-span-2` or `col-span-3` to create hierarchy.",
+    "4. **Data Visualization**: Use Recharts. Style charts with NO grid lines, just axes. Use Gradient Fills (opacity 0.2 to 0).",
+    "5. **Micro-Interactions**: Add `hover:border-primary` transitions to all cards. Use `framer-motion` for entrance animations (stagger children).",
+    "6. **Alpha Score**: Create a custom component for the 'Alpha Score' (0-100). It should look like a speedometer or a radial progress bar with neon colors.",
+    "7. **Navigation**: Create a 'Command Center' top bar (like Bloomberg). Input field in the center, yellow/neon accents.",
+    "8. **Tables**: Dense tables. `py-2` for rows. Monospace font for all numbers.",
+    "9. **Performance**: Use React.lazy for heavy chart components.",
+    "10. **Beginner Mode**: Add a toggle in the top right. When active, show tooltips (Shadcn Tooltip) explaining metrics like 'Alpha Score' or 'Velocity'."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use gradients for backgrounds, only for accents.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Every interaction needs micro-animations.",
+    "Never use 'Inter' for headings.",
+    "Use 'sonner' for toasts.",
+    "All interactive elements must have data-testid attributes."
+  ]
+}
